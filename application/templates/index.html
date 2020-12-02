@@ -1,0 +1,127 @@
+{% extends 'base.html' %} 
+{%load static%}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bitco.In</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="/static/css/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/css/animate.css">
+    
+    <link rel="stylesheet" href="/static/css/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/static/css/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/static/css/css/magnific-popup.css">
+
+    <link rel="stylesheet" href="/static/css/css/aos.css">
+
+    <link rel="stylesheet" href="/static/css/css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="/static/css/css/flaticon.css">
+    <link rel="stylesheet" href="/static/css/css/icomoon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/css/css/styles.css">
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" style="color:aqua; background-color: black; background-size:cover;background-repeat:no-repeat;">
+    <div style="color:aqua;" class="navbar">
+        <a class="navbar-brand" href="index.html" style="color:aqua;">Bitcoin<span style="color:cornsilk;">Investment</span></a> 
+        <a style="color:aqua;" href="/plans"><i class="glyphicon glyphicon-th-list"></i> Plans</a> 
+        <a style="color:aqua;" href="/contact"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+        <a style="color:aqua;" href="/about"><i></i> About us</a>
+        <a style="color:aqua;" href="#"><i class="fa fa-fw fa-user">{{user}}</i></a>
+        <a style="color:aqua;" href="{% url 'logout' %}"><i class="glyphicon glyphicon-cog"></i> Logout</a> 
+    </div>
+    
+            <section style="margin-left:100px;" id="home" class="hero">
+                    <h3 style="color:aqua;" class="vr"><strong>Bitco.In</strong></h3>
+                    <div class="home-slider js-fullheight owl-carousel">
+                    <div class="slider-item js-fullheight">
+                        <div class="overlay"></div>
+                      <div class="container-fluid p-0">
+                        <div class="row d-md-flex no-gutters slider-text js-fullheight align-items-center justify-content-end" data-scrollax-parent="true">
+                            <div class="one-third order-md-last img js-fullheight" style="background-image:url('static/images/bitcoin.jpg');">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="one-forth d-flex js-fullheight align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+                                <div class="text">
+                                  <h2 style="color:aqua;">Welcome to My <strong>Bitco.in</strong></h2>
+                                  <h1 style="color:aqua;" class="mb-4 mt-3"><span>Small Investments can Make Big Impressions</span></h1>
+                                  <p style="color:aqua;">Join our investors today!</p>
+                                  
+                                  <a href="{% url 'contact' %}" class="btn btn-primary" style="width: 160px; height: 60px; color: black;"><h2 style="margin: 10px; color: black;">Get in touch</h2></a>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+          
+                    <div class="slider-item js-fullheight">
+                        
+                      <div class="container-fluid p-0">
+                        <div class="row d-flex no-gutters slider-text js-fullheight align-items-center justify-content-end" data-scrollax-parent="true">
+                            <div class="one-third order-md-last img js-fullheight" style="background-image:url('https://www.lifewire.com/thmb/oRqqS2FSlaKNywVTwvZMXOccSzA=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/paypalbitcoin-5c28aa8c46e0fb000156e2d7.jpg');">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="one-forth d-flex js-fullheight align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+                                <div style="color:aqua;"  class="text">
+                                    <h2 style="color:aqua;">Make your life what you want</h2>
+                                  <h1 style="color:aqua;" class="mb-4 mt-3"><span>Make your money back within a month!</span></h1>
+                                  <p style="color:aqua;">And then relax and watch your money grow!</p>
+                                  
+                                  <a href="{% url 'plans' %}" class="btn btn-primary" style="width: 160px; height: 60px; color: black;"><h2 style="margin: 10px; color: black;">See Plans</h2></a>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+                
+                      
+
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="/static/js/popper.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/jquery.easing.1.3.js"></script>
+    <script src="/static/js/jquery.waypoints.min.js"></script>
+    <script src="/static/js/jquery.stellar.min.js"></script>
+    <script src="/static/js/owl.carousel.min.js"></script>
+    <script src="/static/js/jquery.magnific-popup.min.js"></script>
+    <script src="/static/js/aos.js"></script>
+    <script src="/static/js/jquery.animateNumber.min.js"></script>
+    <script src="/static/js/scrollax.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="/static/js/google-map.js"></script>
+    <script src="/static/js/main.js"></script>
+  </body>
+  <br><br><br>
+  <footer align="center" style="background-color:rgba(0,0,0,0.6); margin-bottom: 0px;">
+        <div class="ftco-footer-widget mb-4">
+            	<div align="center" class="block-23 mb-3">
+	              <ul>
+	                <li><span class="material-icons"></span><span class="text">203-00100 Nairobi, KENYA</span></li>
+	                <li><a href="#"><span class="	glyphicon glyphicon-earphone"></span>  <span class="text">+254 124 059 783</span></a></li>
+                  <li><a href="#"><span class="glyphicon glyphicon-envelope"></span>  <span class="text">arenesmochoma@gmail.com</span></a></li>
+                  <li><a href="{% url 'home' %}">HOME</a></li>
+	              </ul>
+	            </div>
+            </div>
+  </footer>
+</html>
+           
+{% endblock %}

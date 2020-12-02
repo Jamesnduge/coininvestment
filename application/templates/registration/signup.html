@@ -1,0 +1,35 @@
+{% extends 'registration/base.html' %}
+{% load bootstrap4 %}
+
+{% block content %}
+<div style="background-color: rgba(0,0,0,0.5);  border-radius: 1em;" class="container">
+    <div class="row signup-page">
+        <div class="col-md-4">
+            <img style="width: 480px; margin-top: 180px;" src="https://www.bitco.co.za/wp-content/uploads/BitCo-Logo-RGB.png">
+        </div>
+        <div class="col-md-8">
+            {% if form.errors %}
+                <p>Some information may be incorrect</p>
+            {% endif %}
+            <div style="border-left: 30px; margin-left: 220px; border-radius: 1em;" class="signup-fields">
+                <div style=" border-radius: 1em;" class="section">
+                    <h1 style="font-style: italic; color: white; text-shadow: 2px 2px black; " ><strong>Bitco.in</strong></h1>
+                    <div class="form-section">
+                        <form action="/accounts/register/" method="POST">
+                            {% csrf_token %}
+                            {% bootstrap_form form %}
+                            <div class="form-group">
+                                <input type="submit" class="btn btn-primary btn-sm" value="Sign up">
+                            </div>
+                            <input type="hidden" name="next" value="{{next}}">
+                        </form>
+                    </div>
+                </div>
+                <div style=" border-radius: 0.5em;" class="section">
+                    <p>Have an account? <a href="/accounts/login/">Sign In</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

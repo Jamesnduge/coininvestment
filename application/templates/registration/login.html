@@ -1,0 +1,33 @@
+{% extends 'registration/base.html' %}
+{% load bootstrap4 %}
+
+{% block content %}
+<div class="container">
+    <div class="row sign-up">
+        <div class="col-md-4">
+            {% if form.errors %}
+            <p class="small">Password or Username is incorrect</p>
+            {% endif %}
+            <div class="section">
+                <h1><strong>Bitco.in</strong></h1>
+                <div class="form-section">
+                    <form action="/accounts/login/" method="POST">
+                        {% csrf_token %}
+                        {% bootstrap_form form %}
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-primary btn-sm" value="Sign In">
+                        </div>
+                        <input type="hidden" name="next" value="{{next}}">
+                    </form>
+                </div>
+            </div>
+            <div class="section">
+                <p>Don't have an account? <a href="/">Sign-Up</a></p>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <img src="https://www.bitco.co.za/wp-content/uploads/BitCo-Logo-RGB.png" style="width: 520px; height: auto;">
+        </div>
+    </div>
+</div>
+{% endblock %}

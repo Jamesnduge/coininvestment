@@ -1,0 +1,174 @@
+{% extends 'base.html' %} 
+{%load static%}
+{% block content %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bitco.In</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+        <link rel="stylesheet" href="/static/css/css/open-iconic-bootstrap.min.css">
+        <link rel="stylesheet" href="/static/css/css/animate.css">
+        
+        <link rel="stylesheet" href="/static/css/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="/static/css/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="/static/css/css/magnific-popup.css">
+    
+        <link rel="stylesheet" href="/static/css/css/aos.css">
+    
+        <link rel="stylesheet" href="/static/css/css/ionicons.min.css">
+        
+        <link rel="stylesheet" href="/static/css/css/flaticon.css">
+        <link rel="stylesheet" href="/static/css/css/icomoon.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/static/css/css/bootstrap.css">
+        <link rel="stylesheet" href="/static/css/css/styles.css">
+      </head>
+      <body style="background-color: rgba(0,0,0,0.1);">
+            <div style="margin-right:100px;" class="hero">
+                <h3 class="vr"><strong>Bitco.In</strong></h3>
+            </div>
+                <div class="container px-md-5">
+                    <div class="row justify-content-center pb-5">
+                  <div class="col-md-12 heading-section text-center ftco-animate">
+                    <h2 style="color:black;" class="mb-4">Plans</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 testimonial">
+              <div class="carousel-project owl-carousel">
+                  <div class="item">
+                      <div class="project">
+                                  <div class="img">
+                                     <img style="height: 320px;" src="https://media4.giphy.com/media/l49JMVDvP8D38LHwI/giphy.gif" alt="blog">
+                                      <div style="background-color:aqua;" class="text">
+                                          <h3 style="color: black;"><a class="one" data-toggle="modal" data-target="#myModal">view plan</a></h3>
+                                          <span id="one" style="color: black;"><strong>{{one}}$</strong></span>
+                                      </div>
+                                  </div>
+                              </div>
+                  </div>
+                  <div class="item">
+                      <div class="project">
+                                  <div class="img">
+                                          <img style="height: 320px;" src="https://media4.giphy.com/media/l49JMVDvP8D38LHwI/giphy.gif" alt="blog">
+                                      <div style="background-color:aqua;" class="text">
+                                        <h3 style="color: black;"><a class="two" data-toggle="modal" data-target="#myModal">view plan</a></h3>
+                                        <span style="color: black;"><strong>{{two}}$</strong></span>
+                                      </div>
+                                  </div>
+                              </div>
+                  </div>
+                  <div class="item">
+                      <div class="project">
+                                  <div class="img">
+                                  <img style="height: 320px;" src="https://media4.giphy.com/media/l49JMVDvP8D38LHwI/giphy.gif" alt="blog">
+                                      <div style="background-color:aqua; color: black;" class="text ">
+                                          <h3 style="color: black;"><a class="three" data-toggle="modal" data-target="#myModal">view plan</a></h3>
+                                          <span style="color: black;"><strong>{{three}}$</strong></span>
+                                      </div>
+                                  </div>
+                              </div>
+                  </div>
+                  
+              </div>
+            </div>
+              </div>
+                    <div class="row">
+                        <div class="col-md-12 testimonial">
+                    <div class="carousel-project owl-carousel">
+                        <div class="item">
+                            <div class="project">
+                                        <div class="img">
+                                            <img style="height: 320px;" src="https://media4.giphy.com/media/l49JMVDvP8D38LHwI/giphy.gif" class="img-fluid" alt="project">
+                                            <div style="background-color:aqua;" class="text ">
+                                                <h3 style="color: black;"><a class="four" data-toggle="modal" data-target="#myModal">view plan</a></h3>
+                                                <span style="color: black;"><strong>{{four}}$</strong></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>
+                        <div class="item">
+                            <div class="project">
+                                        <div class="img">
+                                            <img style="height: 320px;" src="https://media4.giphy.com/media/l49JMVDvP8D38LHwI/giphy.gif" class="img-fluid" alt="project">
+                                            <div style="background-color:aqua;" class="text ">
+                                                <h3 style="color: black;"><a class="five" data-toggle="modal" data-target="#myModal">view plan</a></h3>
+                                                <span style="color: black;"><strong>{{five}}$</strong></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>
+                        <div class="item">
+                          <div class="project">
+                                      <div class="img">
+                                          <img style="height: 320px;" src="https://media4.giphy.com/media/l49JMVDvP8D38LHwI/giphy.gif" class="img-fluid" alt="project">
+                                          <div style="background-color:aqua;" class="text ">
+                                              <h3 style="color: black;"><a class="six" data-toggle="modal" data-target="#myModal">view plan</a></h3>
+                                              <span style="color: black;"><strong>{{six}}$</strong></span>
+                                          </div>
+                                      </div>
+                                  </div>
+                      </div>
+                    </div>
+                  </div>
+                    </div>
+                </div>  
+                   
+                    <!-- The Modal -->
+                    <div style="margin-top:50px; text-align: center;" id="myModal" class="modal">
+                    <div class="jumbotron">
+                      <div class="modal-content">
+                        <p>Send <span id="btc"></span> Bitcoins to adress:   </p>
+                        <br>
+                        <img style="height: 280px; width: 280px; align-self: center;" src="https://i.postimg.cc/0N00R52m/qrcode.png">
+                        <button style="align-self: center; height: 60px; width: 120px;" class="btn-success"> CONFIRM </button>
+                        <a>qz8xvgrsjgkgtsa9gplnq04nltgm288x2gpjj06as8</a>
+                      </div>
+                    </div>
+                    <H1>Click below Here!</H1>
+                    </div>                  
+      </body>
+      <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="/static/js/popper.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/jquery.easing.1.3.js"></script>
+    <script src="/static/js/jquery.waypoints.min.js"></script>
+    <script src="/static/js/jquery.stellar.min.js"></script>
+    <script src="/static/js/owl.carousel.min.js"></script>
+    <script src="/static/js/jquery.magnific-popup.min.js"></script>
+    <script src="/static/js/aos.js"></script>
+    <script src="/static/js/jquery.animateNumber.min.js"></script>
+    <script src="/static/js/scrollax.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="/static/js/google-map.js"></script>
+    <script src="/static/js/main.js"></script>
+  </body>
+  <br><br><br>
+  <footer align="center" style="background-color:rgba(0,0,0,0.6)">
+        <div class="ftco-footer-widget mb-4">
+            	<div align="center" class="block-23 mb-3">
+	              <ul>
+	                <li><span class="material-icons"></span><span class="text">203-00100 Nairobi, KENYA</span></li>
+	                <li><a href="#"><span class="	glyphicon glyphicon-earphone"></span>  <span class="text">+254 124 059 783</span></a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-envelope"></span>  <span class="text">arenesmochoma@gmail.com</span></a></li>
+                    <li><a href="{% url 'home' %}">HOME</a></li>
+	              </ul>
+	            </div>
+            </div>
+  </footer>
+</html>
+{% endblock %}
