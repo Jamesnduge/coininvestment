@@ -15,7 +15,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '5&pe@0pjlw&%4p4a8^n8(i4a4620(-2nudvewm!8dw!dy9wy0@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -34,7 +34,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
- #   'whitenoise.storage.CompressedManifestStaticFilesStorage',
+    'whitenoise.storage.CompressedManifestStaticFilesStorage',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
