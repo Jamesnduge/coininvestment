@@ -3,6 +3,7 @@ from pathlib import Path
 from decouple import config, Csv
 import django_heroku
 import whitenoise
+#from django.core.wsgi import get_wsgi_application
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -15,9 +16,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '5&pe@0pjlw&%4p4a8^n8(i4a4620(-2nudvewm!8dw!dy9wy0@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -119,11 +120,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS =(
-     os.path.join(BASE_DIR,'static'),
+     os.path.join(BASE_DIR,'staticfiles'),
 )
 STATIC_ROOT = os.path.join(BASE_DIR,'static')
 
 STATICFILES_STORAGE = 'whitenoise.django.CompressedManifestStaticFilesStorage'
-MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 
-django_heroku.settings(locals())
+
